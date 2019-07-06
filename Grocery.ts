@@ -15,13 +15,13 @@ class Grocery {
 
 //set the grocery items
 //I used the examples from the assignment (milk, bread, and eggs)
-let groceries = [new Grocery("Milk", 1, 2.99), new Grocery("Bread", 2, 2.49), new Grocery("Eggs", 12, 2.96)];
+let groceryList= [new Grocery("Milk", 1, 2.99), new Grocery("Bread", 2, 2.49), new Grocery("Eggs", 12, 2.96)];
 
 //the following function will list out each item with the name of the item, the quantity, and the price
-function showItem(groceries) {
+function showItem(groceryList) {
   var text = "";
 
-  groceries.forEach((item) => {
+  groceryList.forEach((item) => {
     text += `<b>Item:</b> ${item.name}  <br><b>Quantity:</b> ${item.quantity} <br><b>Price:</b> ${item.price} <br><br>`;
   })
 
@@ -29,4 +29,4 @@ function showItem(groceries) {
 }
 
 
-document.body.innerHTML = showItem(groceries);
+document.body.innerHTML = showItem(groceryList);
