@@ -1,5 +1,6 @@
 //the following creates a class called Grocery
 var Grocery = /** @class */ (function () {
+    //constructor will create the different parts of the grocery list
     function Grocery(inputName, inputQuantity, inputPrice) {
         this.inputName = inputName;
         this.inputQuantity = inputQuantity;
@@ -13,6 +14,7 @@ var Grocery = /** @class */ (function () {
 //set the grocery items
 //I used the examples from the assignment (milk, bread, and eggs)
 var groceries = [new Grocery("Milk", 1, 2.99), new Grocery("Bread", 2, 2.49), new Grocery("Eggs", 12, 2.96)];
+//the following function will list out each item with the name of the item, the quantity, and the price
 function showItem(groceries) {
     var text = "";
     groceries.forEach(function (item) {
